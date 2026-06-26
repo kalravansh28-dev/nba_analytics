@@ -1,0 +1,2165 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20262.26.0603.1643                               -->
+<workbook original-version='18.1' source-build='2026.2.0 (20262.26.0603.1643)' source-platform='mac' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <PatternedLineMarks />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <repository-location id='Book1_17823767213270' path='/workbooks' revision='1.2' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='nba_2023_24_regular_season_games' inline='true' name='federated.0b0gx511r5gkyg1abfnwo0iug63b' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='nba_2023_24_regular_season_games' name='textscan.1ll0dr51qbezub118f7be198zh1w'>
+            <connection class='textscan' directory='/Users/vnshkalraa/Downloads' filename='nba_2023_24_regular_season_games.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1ll0dr51qbezub118f7be198zh1w' name='nba_2023_24_regular_season_games.csv' table='[nba_2023_24_regular_season_games#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='integer' name='SEASON_ID' ordinal='0' />
+            <column datatype='integer' name='TEAM_ID' ordinal='1' />
+            <column datatype='string' name='TEAM_ABBREVIATION' ordinal='2' />
+            <column datatype='string' name='TEAM_NAME' ordinal='3' />
+            <column datatype='integer' name='GAME_ID' ordinal='4' />
+            <column datatype='date' name='GAME_DATE' ordinal='5' />
+            <column datatype='string' name='MATCHUP' ordinal='6' />
+            <column datatype='string' name='WL' ordinal='7' />
+            <column datatype='integer' name='MIN' ordinal='8' />
+            <column datatype='integer' name='PTS' ordinal='9' />
+            <column datatype='integer' name='FGM' ordinal='10' />
+            <column datatype='integer' name='FGA' ordinal='11' />
+            <column datatype='real' name='FG_PCT' ordinal='12' />
+            <column datatype='integer' name='FG3M' ordinal='13' />
+            <column datatype='integer' name='FG3A' ordinal='14' />
+            <column datatype='real' name='FG3_PCT' ordinal='15' />
+            <column datatype='integer' name='FTM' ordinal='16' />
+            <column datatype='integer' name='FTA' ordinal='17' />
+            <column datatype='real' name='FT_PCT' ordinal='18' />
+            <column datatype='integer' name='OREB' ordinal='19' />
+            <column datatype='integer' name='DREB' ordinal='20' />
+            <column datatype='integer' name='REB' ordinal='21' />
+            <column datatype='integer' name='AST' ordinal='22' />
+            <column datatype='integer' name='STL' ordinal='23' />
+            <column datatype='integer' name='BLK' ordinal='24' />
+            <column datatype='integer' name='TOV' ordinal='25' />
+            <column datatype='integer' name='PF' ordinal='26' />
+            <column datatype='real' name='PLUS_MINUS' ordinal='27' />
+            <column datatype='integer' name='IS_HOME' ordinal='28' />
+            <column datatype='string' name='OPPONENT' ordinal='29' />
+            <column datatype='integer' name='GAME_NUM' ordinal='30' />
+            <column datatype='real' name='PTS_ROLL5' ordinal='31' />
+            <column datatype='real' name='AST_ROLL5' ordinal='32' />
+            <column datatype='real' name='TOV_ROLL5' ordinal='33' />
+            <column datatype='real' name='REB_ROLL5' ordinal='34' />
+            <column datatype='real' name='FG_PCT_ROLL5' ordinal='35' />
+            <column datatype='integer' name='OPPONENT_TEAM_ID' ordinal='36' />
+            <column datatype='string' name='home_team_game_id' ordinal='37' />
+            <column datatype='string' name='away_team_game_id' ordinal='38' />
+            <column datatype='real' name='OPP_PTS_ROLL5' ordinal='39' />
+            <column datatype='real' name='OPP_AST_ROLL5' ordinal='40' />
+            <column datatype='real' name='OPP_TOV_ROLL5' ordinal='41' />
+            <column datatype='real' name='OPP_REB_ROLL5' ordinal='42' />
+            <column datatype='real' name='OPP_FG_PCT_ROLL5' ordinal='43' />
+            <column datatype='integer' name='TARGET_WIN' ordinal='44' />
+            <column datatype='integer' name='WIN_STREAK' ordinal='45' />
+            <column datatype='integer' name='REST_DAYS' ordinal='46' />
+            <column datatype='integer' name='DATE_ORDINAL' ordinal='47' />
+            <column datatype='real' name='TEAM_WIN_RATE' ordinal='48' />
+            <column datatype='real' name='Opponent_Win_Rate' ordinal='49' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[nba_2023_24_regular_season_games.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SEASON_ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[SEASON_ID]</local-name>
+            <parent-name>[nba_2023_24_regular_season_games.csv]</parent-name>
+            <remote-alias>SEASON_ID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[nba_2023_24_regular_season_games.csv_2B137A8E6A954CCD8C8022616E04D0EE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TEAM_ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TEAM_ID]</local-name>
+            <parent-name>[nba_2023_24_regular_season_games.csv]</parent-name>
+            <remote-alias>TEAM_ID</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[nba_2023_24_regular_season_games.csv_2B137A8E6A954CCD8C8022616E04D0EE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TEAM_ABBREVIATION</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[TEAM_ABBREVIATION]</local-name>
+            <parent-name>[nba_2023_24_regular_season_games.csv]</parent-name>
+            <remote-alias>TEAM_ABBREVIATION</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[nba_2023_24_regular_season_games.csv_2B137A8E6A954CCD8C8022616E04D0EE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TEAM_NAME</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[TEAM_NAME]</local-name>
+            <parent-name>[nba_2023_24_regular_season_games.csv]</parent-name>
+            <remote-alias>TEAM_NAME</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[nba_2023_24_regular_season_games.csv_2B137A8E6A954CCD8C8022616E04D0EE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GAME_ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[GAME_ID]</local-name>
+            <parent-name>[nba_2023_24_regular_season_games.csv]</parent-name>
+            <remote-alias>GAME_ID</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[nba_2023_24_regular_season_games.csv_2B137A8E6A954CCD8C8022616E04D0EE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GAME_DATE</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[GAME_DATE]</local-name>
+            <parent-name>[nba_2023_24_regular_season_games.csv]</parent-name>
+            <remote-alias>GAME_DATE</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[nba_2023_24_regular_season_games.csv_2B137A8E6A954CCD8C8022616E04D0EE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MATCHUP</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[MATCHUP]</local-name>
+            <parent-name>[nba_2023_24_regular_season_games.csv]</parent-name>
+            <remote-alias>MATCHUP</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[nba_2023_24_regular_season_games.csv_2B137A8E6A954CCD8C8022616E04D0EE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WL</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[WL]</local-name>
+            <parent-name>[nba_2023_24_regular_season_games.csv]</parent-name>
+            <remote-alias>WL</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[nba_2023_24_regular_season_games.csv_2B137A8E6A954CCD8C8022616E04D0EE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MIN</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[MIN]</local-name>
+            <parent-name>[nba_2023_24_regular_season_games.csv]</parent-name>
+            <remote-alias>MIN</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[nba_2023_24_regular_season_games.csv_2B137A8E6A954CCD8C8022616E04D0EE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PTS</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PTS]</local-name>
+            <parent-name>[nba_2023_24_regular_season_games.csv]</parent-name>
+            <remote-alias>PTS</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[nba_2023_24_regular_season_games.csv_2B137A8E6A954CCD8C8022616E04D0EE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FGM</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[FGM]</local-name>
+            <parent-name>[nba_2023_24_regular_season_games.csv]</parent-name>
+            <remote-alias>FGM</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[nba_2023_24_regular_season_games.csv_2B137A8E6A954CCD8C8022616E04D0EE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FGA</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[FGA]</local-name>
+            <parent-name>[nba_2023_24_regular_season_games.csv]</parent-name>
+            <remote-alias>FGA</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[nba_2023_24_regular_season_games.csv_2B137A8E6A954CCD8C8022616E04D0EE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FG_PCT</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[FG_PCT]</local-name>
+            <parent-name>[nba_2023_24_regular_season_games.csv]</parent-name>
+            <remote-alias>FG_PCT</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[nba_2023_24_regular_season_games.csv_2B137A8E6A954CCD8C8022616E04D0EE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FG3M</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[FG3M]</local-name>
+            <parent-name>[nba_2023_24_regular_season_games.csv]</parent-name>
+            <remote-alias>FG3M</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[nba_2023_24_regular_season_games.csv_2B137A8E6A954CCD8C8022616E04D0EE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FG3A</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[FG3A]</local-name>
+            <parent-name>[nba_2023_24_regular_season_games.csv]</parent-name>
+            <remote-alias>FG3A</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[nba_2023_24_regular_season_games.csv_2B137A8E6A954CCD8C8022616E04D0EE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FG3_PCT</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[FG3_PCT]</local-name>
+            <parent-name>[nba_2023_24_regular_season_games.csv]</parent-name>
+            <remote-alias>FG3_PCT</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[nba_2023_24_regular_season_games.csv_2B137A8E6A954CCD8C8022616E04D0EE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FTM</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[FTM]</local-name>
+            <parent-name>[nba_2023_24_regular_season_games.csv]</parent-name>
+            <remote-alias>FTM</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[nba_2023_24_regular_season_games.csv_2B137A8E6A954CCD8C8022616E04D0EE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FTA</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[FTA]</local-name>
+            <parent-name>[nba_2023_24_regular_season_games.csv]</parent-name>
+            <remote-alias>FTA</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[nba_2023_24_regular_season_games.csv_2B137A8E6A954CCD8C8022616E04D0EE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FT_PCT</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[FT_PCT]</local-name>
+            <parent-name>[nba_2023_24_regular_season_games.csv]</parent-name>
+            <remote-alias>FT_PCT</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[nba_2023_24_regular_season_games.csv_2B137A8E6A954CCD8C8022616E04D0EE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OREB</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[OREB]</local-name>
+            <parent-name>[nba_2023_24_regular_season_games.csv]</parent-name>
+            <remote-alias>OREB</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[nba_2023_24_regular_season_games.csv_2B137A8E6A954CCD8C8022616E04D0EE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DREB</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[DREB]</local-name>
+            <parent-name>[nba_2023_24_regular_season_games.csv]</parent-name>
+            <remote-alias>DREB</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[nba_2023_24_regular_season_games.csv_2B137A8E6A954CCD8C8022616E04D0EE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>REB</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[REB]</local-name>
+            <parent-name>[nba_2023_24_regular_season_games.csv]</parent-name>
+            <remote-alias>REB</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[nba_2023_24_regular_season_games.csv_2B137A8E6A954CCD8C8022616E04D0EE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AST</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[AST]</local-name>
+            <parent-name>[nba_2023_24_regular_season_games.csv]</parent-name>
+            <remote-alias>AST</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[nba_2023_24_regular_season_games.csv_2B137A8E6A954CCD8C8022616E04D0EE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>STL</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[STL]</local-name>
+            <parent-name>[nba_2023_24_regular_season_games.csv]</parent-name>
+            <remote-alias>STL</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[nba_2023_24_regular_season_games.csv_2B137A8E6A954CCD8C8022616E04D0EE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BLK</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[BLK]</local-name>
+            <parent-name>[nba_2023_24_regular_season_games.csv]</parent-name>
+            <remote-alias>BLK</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[nba_2023_24_regular_season_games.csv_2B137A8E6A954CCD8C8022616E04D0EE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TOV</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TOV]</local-name>
+            <parent-name>[nba_2023_24_regular_season_games.csv]</parent-name>
+            <remote-alias>TOV</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[nba_2023_24_regular_season_games.csv_2B137A8E6A954CCD8C8022616E04D0EE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PF</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PF]</local-name>
+            <parent-name>[nba_2023_24_regular_season_games.csv]</parent-name>
+            <remote-alias>PF</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[nba_2023_24_regular_season_games.csv_2B137A8E6A954CCD8C8022616E04D0EE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PLUS_MINUS</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[PLUS_MINUS]</local-name>
+            <parent-name>[nba_2023_24_regular_season_games.csv]</parent-name>
+            <remote-alias>PLUS_MINUS</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[nba_2023_24_regular_season_games.csv_2B137A8E6A954CCD8C8022616E04D0EE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>IS_HOME</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[IS_HOME]</local-name>
+            <parent-name>[nba_2023_24_regular_season_games.csv]</parent-name>
+            <remote-alias>IS_HOME</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[nba_2023_24_regular_season_games.csv_2B137A8E6A954CCD8C8022616E04D0EE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OPPONENT</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[OPPONENT]</local-name>
+            <parent-name>[nba_2023_24_regular_season_games.csv]</parent-name>
+            <remote-alias>OPPONENT</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[nba_2023_24_regular_season_games.csv_2B137A8E6A954CCD8C8022616E04D0EE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GAME_NUM</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[GAME_NUM]</local-name>
+            <parent-name>[nba_2023_24_regular_season_games.csv]</parent-name>
+            <remote-alias>GAME_NUM</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[nba_2023_24_regular_season_games.csv_2B137A8E6A954CCD8C8022616E04D0EE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PTS_ROLL5</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[PTS_ROLL5]</local-name>
+            <parent-name>[nba_2023_24_regular_season_games.csv]</parent-name>
+            <remote-alias>PTS_ROLL5</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[nba_2023_24_regular_season_games.csv_2B137A8E6A954CCD8C8022616E04D0EE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AST_ROLL5</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[AST_ROLL5]</local-name>
+            <parent-name>[nba_2023_24_regular_season_games.csv]</parent-name>
+            <remote-alias>AST_ROLL5</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[nba_2023_24_regular_season_games.csv_2B137A8E6A954CCD8C8022616E04D0EE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TOV_ROLL5</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[TOV_ROLL5]</local-name>
+            <parent-name>[nba_2023_24_regular_season_games.csv]</parent-name>
+            <remote-alias>TOV_ROLL5</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[nba_2023_24_regular_season_games.csv_2B137A8E6A954CCD8C8022616E04D0EE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>REB_ROLL5</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[REB_ROLL5]</local-name>
+            <parent-name>[nba_2023_24_regular_season_games.csv]</parent-name>
+            <remote-alias>REB_ROLL5</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[nba_2023_24_regular_season_games.csv_2B137A8E6A954CCD8C8022616E04D0EE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FG_PCT_ROLL5</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[FG_PCT_ROLL5]</local-name>
+            <parent-name>[nba_2023_24_regular_season_games.csv]</parent-name>
+            <remote-alias>FG_PCT_ROLL5</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[nba_2023_24_regular_season_games.csv_2B137A8E6A954CCD8C8022616E04D0EE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OPPONENT_TEAM_ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[OPPONENT_TEAM_ID]</local-name>
+            <parent-name>[nba_2023_24_regular_season_games.csv]</parent-name>
+            <remote-alias>OPPONENT_TEAM_ID</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[nba_2023_24_regular_season_games.csv_2B137A8E6A954CCD8C8022616E04D0EE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>home_team_game_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[home_team_game_id]</local-name>
+            <parent-name>[nba_2023_24_regular_season_games.csv]</parent-name>
+            <remote-alias>home_team_game_id</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[nba_2023_24_regular_season_games.csv_2B137A8E6A954CCD8C8022616E04D0EE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>away_team_game_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[away_team_game_id]</local-name>
+            <parent-name>[nba_2023_24_regular_season_games.csv]</parent-name>
+            <remote-alias>away_team_game_id</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[nba_2023_24_regular_season_games.csv_2B137A8E6A954CCD8C8022616E04D0EE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OPP_PTS_ROLL5</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[OPP_PTS_ROLL5]</local-name>
+            <parent-name>[nba_2023_24_regular_season_games.csv]</parent-name>
+            <remote-alias>OPP_PTS_ROLL5</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[nba_2023_24_regular_season_games.csv_2B137A8E6A954CCD8C8022616E04D0EE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OPP_AST_ROLL5</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[OPP_AST_ROLL5]</local-name>
+            <parent-name>[nba_2023_24_regular_season_games.csv]</parent-name>
+            <remote-alias>OPP_AST_ROLL5</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[nba_2023_24_regular_season_games.csv_2B137A8E6A954CCD8C8022616E04D0EE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OPP_TOV_ROLL5</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[OPP_TOV_ROLL5]</local-name>
+            <parent-name>[nba_2023_24_regular_season_games.csv]</parent-name>
+            <remote-alias>OPP_TOV_ROLL5</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[nba_2023_24_regular_season_games.csv_2B137A8E6A954CCD8C8022616E04D0EE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OPP_REB_ROLL5</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[OPP_REB_ROLL5]</local-name>
+            <parent-name>[nba_2023_24_regular_season_games.csv]</parent-name>
+            <remote-alias>OPP_REB_ROLL5</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[nba_2023_24_regular_season_games.csv_2B137A8E6A954CCD8C8022616E04D0EE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OPP_FG_PCT_ROLL5</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[OPP_FG_PCT_ROLL5]</local-name>
+            <parent-name>[nba_2023_24_regular_season_games.csv]</parent-name>
+            <remote-alias>OPP_FG_PCT_ROLL5</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[nba_2023_24_regular_season_games.csv_2B137A8E6A954CCD8C8022616E04D0EE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TARGET_WIN</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TARGET_WIN]</local-name>
+            <parent-name>[nba_2023_24_regular_season_games.csv]</parent-name>
+            <remote-alias>TARGET_WIN</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[nba_2023_24_regular_season_games.csv_2B137A8E6A954CCD8C8022616E04D0EE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WIN_STREAK</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[WIN_STREAK]</local-name>
+            <parent-name>[nba_2023_24_regular_season_games.csv]</parent-name>
+            <remote-alias>WIN_STREAK</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[nba_2023_24_regular_season_games.csv_2B137A8E6A954CCD8C8022616E04D0EE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>REST_DAYS</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[REST_DAYS]</local-name>
+            <parent-name>[nba_2023_24_regular_season_games.csv]</parent-name>
+            <remote-alias>REST_DAYS</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[nba_2023_24_regular_season_games.csv_2B137A8E6A954CCD8C8022616E04D0EE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DATE_ORDINAL</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[DATE_ORDINAL]</local-name>
+            <parent-name>[nba_2023_24_regular_season_games.csv]</parent-name>
+            <remote-alias>DATE_ORDINAL</remote-alias>
+            <ordinal>47</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[nba_2023_24_regular_season_games.csv_2B137A8E6A954CCD8C8022616E04D0EE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TEAM_WIN_RATE</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[TEAM_WIN_RATE]</local-name>
+            <parent-name>[nba_2023_24_regular_season_games.csv]</parent-name>
+            <remote-alias>TEAM_WIN_RATE</remote-alias>
+            <ordinal>48</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[nba_2023_24_regular_season_games.csv_2B137A8E6A954CCD8C8022616E04D0EE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Opponent_Win_Rate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Opponent_Win_Rate]</local-name>
+            <parent-name>[nba_2023_24_regular_season_games.csv]</parent-name>
+            <remote-alias>Opponent_Win_Rate</remote-alias>
+            <ordinal>49</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[nba_2023_24_regular_season_games.csv_2B137A8E6A954CCD8C8022616E04D0EE]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[AST]' role='measure' type='quantitative' />
+      <column caption='Ast Roll5' datatype='real' name='[AST_ROLL5]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[BLK]' role='measure' type='quantitative' />
+      <column caption='W Marker' datatype='integer' name='[Calculation_0987102718590976]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [WL] = &apos;W&apos; OR [TARGET_WIN] = 1 THEN 1 ELSE 0 END' />
+      </column>
+      <column caption='L Marker' datatype='integer' name='[Calculation_0987102718844929]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [WL] = &apos;L&apos; OR [TARGET_WIN] = 0 THEN 1 ELSE 0 END' />
+      </column>
+      <column caption='Date Ordinal' datatype='integer' name='[DATE_ORDINAL]' role='measure' type='quantitative' />
+      <column caption='Dreb' datatype='integer' name='[DREB]' role='measure' type='quantitative' />
+      <column caption='Fg3A' datatype='integer' name='[FG3A]' role='measure' type='quantitative' />
+      <column caption='Fg3M' datatype='integer' name='[FG3M]' role='measure' type='quantitative' />
+      <column caption='Fg3 Pct' datatype='real' name='[FG3_PCT]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[FGA]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[FGM]' role='measure' type='quantitative' />
+      <column caption='Fg Pct' datatype='real' name='[FG_PCT]' role='measure' type='quantitative' />
+      <column caption='Fg Pct Roll5' datatype='real' name='[FG_PCT_ROLL5]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[FTA]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[FTM]' role='measure' type='quantitative' />
+      <column caption='Ft Pct' datatype='real' name='[FT_PCT]' role='measure' type='quantitative' />
+      <column caption='Game Date' datatype='date' name='[GAME_DATE]' role='dimension' type='ordinal' />
+      <column caption='Game Id' datatype='integer' name='[GAME_ID]' role='dimension' type='ordinal' />
+      <column caption='Game Num' datatype='integer' name='[GAME_NUM]' role='dimension' type='ordinal' />
+      <column caption='Is Home' datatype='integer' name='[IS_HOME]' role='measure' type='quantitative' />
+      <column caption='Matchup' datatype='string' name='[MATCHUP]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[MIN]' role='measure' type='quantitative' />
+      <column caption='Opponent' datatype='string' name='[OPPONENT]' role='dimension' type='nominal' />
+      <column caption='Opponent Team Id' datatype='integer' name='[OPPONENT_TEAM_ID]' role='dimension' type='ordinal' />
+      <column caption='Opp Ast Roll5' datatype='real' name='[OPP_AST_ROLL5]' role='measure' type='quantitative' />
+      <column caption='Opp Fg Pct Roll5' datatype='real' name='[OPP_FG_PCT_ROLL5]' role='measure' type='quantitative' />
+      <column caption='Opp Pts Roll5' datatype='real' name='[OPP_PTS_ROLL5]' role='measure' type='quantitative' />
+      <column caption='Opp Reb Roll5' datatype='real' name='[OPP_REB_ROLL5]' role='measure' type='quantitative' />
+      <column caption='Opp Tov Roll5' datatype='real' name='[OPP_TOV_ROLL5]' role='measure' type='quantitative' />
+      <column caption='Oreb' datatype='integer' name='[OREB]' role='measure' type='quantitative' />
+      <column caption='Opponent Win Rate' datatype='real' name='[Opponent_Win_Rate]' role='measure' type='quantitative' />
+      <column caption='Plus Minus' datatype='real' name='[PLUS_MINUS]' role='measure' type='quantitative' />
+      <column caption='Pts Roll5' datatype='real' name='[PTS_ROLL5]' role='measure' type='quantitative' />
+      <column caption='Reb Roll5' datatype='real' name='[REB_ROLL5]' role='measure' type='quantitative' />
+      <column caption='Rest Days' datatype='integer' name='[REST_DAYS]' role='measure' type='quantitative' />
+      <column caption='Season Id' datatype='integer' name='[SEASON_ID]' role='dimension' type='ordinal' />
+      <column caption='Target Win' datatype='integer' name='[TARGET_WIN]' role='measure' type='quantitative' />
+      <column caption='Team Abbreviation' datatype='string' name='[TEAM_ABBREVIATION]' role='dimension' type='nominal' />
+      <column caption='Team Id' datatype='integer' name='[TEAM_ID]' role='dimension' type='ordinal' />
+      <column caption='Team Name' datatype='string' name='[TEAM_NAME]' role='dimension' type='nominal' />
+      <column caption='Team Win Rate' datatype='real' name='[TEAM_WIN_RATE]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[TOV]' role='measure' type='quantitative' />
+      <column caption='Tov Roll5' datatype='real' name='[TOV_ROLL5]' role='measure' type='quantitative' />
+      <column caption='Win Streak' datatype='integer' name='[WIN_STREAK]' role='measure' type='quantitative' />
+      <column caption='nba_2023_24_regular_season_games.csv' datatype='table' name='[__tableau_internal_object_id__].[nba_2023_24_regular_season_games.csv_2B137A8E6A954CCD8C8022616E04D0EE]' role='measure' type='quantitative' />
+      <column caption='Away Team Game Id' datatype='string' name='[away_team_game_id]' role='dimension' type='nominal' />
+      <column caption='Home Team Game Id' datatype='string' name='[home_team_game_id]' role='dimension' type='nominal' />
+      <column-instance column='[AST]' derivation='Avg' name='[avg:AST:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[AST_ROLL5]' derivation='Avg' name='[avg:AST_ROLL5:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[DREB]' derivation='Avg' name='[avg:DREB:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[FG3_PCT]' derivation='Avg' name='[avg:FG3_PCT:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[FG_PCT]' derivation='Avg' name='[avg:FG_PCT:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[FG_PCT_ROLL5]' derivation='Avg' name='[avg:FG_PCT_ROLL5:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[FT_PCT]' derivation='Avg' name='[avg:FT_PCT:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[OPP_FG_PCT_ROLL5]' derivation='Avg' name='[avg:OPP_FG_PCT_ROLL5:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[OPP_REB_ROLL5]' derivation='Avg' name='[avg:OPP_REB_ROLL5:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[REB_ROLL5]' derivation='Avg' name='[avg:REB_ROLL5:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[TOV_ROLL5]' derivation='Avg' name='[avg:TOV_ROLL5:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_0987102718590976]' derivation='Sum' name='[cum:sum:Calculation_0987102718590976:qk]' pivot='key' type='quantitative'>
+        <table-calc aggregation='Sum' ordering-type='Rows' type='CumTotal' />
+      </column-instance>
+      <column-instance column='[Calculation_0987102718844929]' derivation='Sum' name='[cum:sum:Calculation_0987102718844929:qk]' pivot='key' type='quantitative'>
+        <table-calc aggregation='Sum' ordering-type='Rows' type='CumTotal' />
+      </column-instance>
+      <column-instance column='[AST]' derivation='Sum' name='[sum:AST:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[AST_ROLL5]' derivation='Sum' name='[sum:AST_ROLL5:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[BLK]' derivation='Sum' name='[sum:BLK:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_0987102718844929]' derivation='Sum' name='[sum:Calculation_0987102718844929:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[DATE_ORDINAL]' derivation='Sum' name='[sum:DATE_ORDINAL:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[DREB]' derivation='Sum' name='[sum:DREB:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[FG3A]' derivation='Sum' name='[sum:FG3A:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[FG3M]' derivation='Sum' name='[sum:FG3M:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[FG3_PCT]' derivation='Sum' name='[sum:FG3_PCT:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[FGA]' derivation='Sum' name='[sum:FGA:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[FGM]' derivation='Sum' name='[sum:FGM:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[FG_PCT]' derivation='Sum' name='[sum:FG_PCT:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[FG_PCT_ROLL5]' derivation='Sum' name='[sum:FG_PCT_ROLL5:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[FTA]' derivation='Sum' name='[sum:FTA:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[FTM]' derivation='Sum' name='[sum:FTM:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[FT_PCT]' derivation='Sum' name='[sum:FT_PCT:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[IS_HOME]' derivation='Sum' name='[sum:IS_HOME:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[MIN]' derivation='Sum' name='[sum:MIN:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[OPP_AST_ROLL5]' derivation='Sum' name='[sum:OPP_AST_ROLL5:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[OPP_FG_PCT_ROLL5]' derivation='Sum' name='[sum:OPP_FG_PCT_ROLL5:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[AST]' derivation='Avg' name='[win:avg:AST:qk:2]' pivot='key' type='quantitative'>
+        <table-calc aggregation='Avg' from='-4' ordering-type='Rows' to='0' type='WindowTotal' window-options='IncludeCurrent' />
+      </column-instance>
+      <column-instance column='[AST]' derivation='Avg' name='[win:avg:AST:qk]' pivot='key' type='quantitative'>
+        <table-calc aggregation='Avg' from='-2' ordering-type='Rows' to='0' type='WindowTotal' window-options='IncludeCurrent' />
+      </column-instance>
+      <column-instance column='[DREB]' derivation='Avg' name='[win:avg:DREB:qk:2]' pivot='key' type='quantitative'>
+        <table-calc aggregation='Avg' from='-4' ordering-type='Rows' to='0' type='WindowTotal' window-options='IncludeCurrent' />
+      </column-instance>
+      <column-instance column='[DREB]' derivation='Avg' name='[win:avg:DREB:qk]' pivot='key' type='quantitative'>
+        <table-calc aggregation='Avg' from='-2' ordering-type='Rows' to='0' type='WindowTotal' window-options='IncludeCurrent' />
+      </column-instance>
+      <column-instance column='[FG3_PCT]' derivation='Avg' name='[win:avg:FG3_PCT:qk:2]' pivot='key' type='quantitative'>
+        <table-calc aggregation='Avg' from='-4' ordering-type='Rows' to='0' type='WindowTotal' window-options='IncludeCurrent' />
+      </column-instance>
+      <column-instance column='[FG3_PCT]' derivation='Avg' name='[win:avg:FG3_PCT:qk:4]' pivot='key' type='quantitative'>
+        <table-calc aggregation='Avg' from='-4' ordering-type='CellInPane' to='0' type='WindowTotal' window-options='IncludeCurrent' />
+      </column-instance>
+      <column-instance column='[FG3_PCT]' derivation='Avg' name='[win:avg:FG3_PCT:qk]' pivot='key' type='quantitative'>
+        <table-calc aggregation='Avg' from='-2' ordering-type='Rows' to='0' type='WindowTotal' window-options='IncludeCurrent' />
+      </column-instance>
+      <column-instance column='[FG_PCT]' derivation='Avg' name='[win:avg:FG_PCT:qk:2]' pivot='key' type='quantitative'>
+        <table-calc aggregation='Avg' from='-4' ordering-type='Rows' to='0' type='WindowTotal' window-options='IncludeCurrent' />
+      </column-instance>
+      <column-instance column='[FG_PCT]' derivation='Avg' name='[win:avg:FG_PCT:qk]' pivot='key' type='quantitative'>
+        <table-calc aggregation='Avg' from='-2' ordering-type='Rows' to='0' type='WindowTotal' window-options='IncludeCurrent' />
+      </column-instance>
+      <column-instance column='[FT_PCT]' derivation='Avg' name='[win:avg:FT_PCT:qk:2]' pivot='key' type='quantitative'>
+        <table-calc aggregation='Avg' from='-4' ordering-type='Rows' to='0' type='WindowTotal' window-options='IncludeCurrent' />
+      </column-instance>
+      <column-instance column='[FT_PCT]' derivation='Avg' name='[win:avg:FT_PCT:qk]' pivot='key' type='quantitative'>
+        <table-calc aggregation='Avg' from='-2' ordering-type='Rows' to='0' type='WindowTotal' window-options='IncludeCurrent' />
+      </column-instance>
+      <column-instance column='[OREB]' derivation='Avg' name='[win:avg:OREB:qk:2]' pivot='key' type='quantitative'>
+        <table-calc aggregation='Avg' from='-4' ordering-type='Rows' to='0' type='WindowTotal' window-options='IncludeCurrent' />
+      </column-instance>
+      <column-instance column='[TOV]' derivation='Avg' name='[win:avg:TOV:qk:2]' pivot='key' type='quantitative'>
+        <table-calc aggregation='Avg' from='-4' ordering-type='Rows' to='0' type='WindowTotal' window-options='IncludeCurrent' />
+      </column-instance>
+      <extract count='-1' enabled='true' object-id='' units='records' user-specific='false'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='Data/tableau-temp/#TableauTemp_1khglg61l98jki12h7nuk1ccfg7q.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>SEASON_ID</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[SEASON_ID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>SEASON_ID</remote-alias>
+              <ordinal>0</ordinal>
+              <family>nba_2023_24_regular_season_games.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>TEAM_ID</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[TEAM_ID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>TEAM_ID</remote-alias>
+              <ordinal>1</ordinal>
+              <family>nba_2023_24_regular_season_games.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>30</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>TEAM_ABBREVIATION</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[TEAM_ABBREVIATION]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>TEAM_ABBREVIATION</remote-alias>
+              <ordinal>2</ordinal>
+              <family>nba_2023_24_regular_season_games.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>30</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>TEAM_NAME</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[TEAM_NAME]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>TEAM_NAME</remote-alias>
+              <ordinal>3</ordinal>
+              <family>nba_2023_24_regular_season_games.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>30</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>GAME_ID</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[GAME_ID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>GAME_ID</remote-alias>
+              <ordinal>4</ordinal>
+              <family>nba_2023_24_regular_season_games.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1155</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>GAME_DATE</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[GAME_DATE]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>GAME_DATE</remote-alias>
+              <ordinal>5</ordinal>
+              <family>nba_2023_24_regular_season_games.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>162</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>MATCHUP</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[MATCHUP]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>MATCHUP</remote-alias>
+              <ordinal>6</ordinal>
+              <family>nba_2023_24_regular_season_games.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1331</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>WL</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[WL]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>WL</remote-alias>
+              <ordinal>7</ordinal>
+              <family>nba_2023_24_regular_season_games.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>MIN</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[MIN]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>MIN</remote-alias>
+              <ordinal>8</ordinal>
+              <family>nba_2023_24_regular_season_games.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>17</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>PTS</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[PTS]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>PTS</remote-alias>
+              <ordinal>9</ordinal>
+              <family>nba_2023_24_regular_season_games.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>79</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>FGM</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[FGM]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>FGM</remote-alias>
+              <ordinal>10</ordinal>
+              <family>nba_2023_24_regular_season_games.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>33</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>FGA</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[FGA]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>FGA</remote-alias>
+              <ordinal>11</ordinal>
+              <family>nba_2023_24_regular_season_games.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>48</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>FG_PCT</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[FG_PCT]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>FG_PCT</remote-alias>
+              <ordinal>12</ordinal>
+              <family>nba_2023_24_regular_season_games.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>246</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>FG3M</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[FG3M]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>FG3M</remote-alias>
+              <ordinal>13</ordinal>
+              <family>nba_2023_24_regular_season_games.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>23</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>FG3A</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[FG3A]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>FG3A</remote-alias>
+              <ordinal>14</ordinal>
+              <family>nba_2023_24_regular_season_games.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>44</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>FG3_PCT</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[FG3_PCT]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>FG3_PCT</remote-alias>
+              <ordinal>15</ordinal>
+              <family>nba_2023_24_regular_season_games.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>266</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>FTM</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[FTM]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>FTM</remote-alias>
+              <ordinal>16</ordinal>
+              <family>nba_2023_24_regular_season_games.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>38</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>FTA</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[FTA]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>FTA</remote-alias>
+              <ordinal>17</ordinal>
+              <family>nba_2023_24_regular_season_games.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>46</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>FT_PCT</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[FT_PCT]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>FT_PCT</remote-alias>
+              <ordinal>18</ordinal>
+              <family>nba_2023_24_regular_season_games.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>190</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>OREB</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[OREB]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>OREB</remote-alias>
+              <ordinal>19</ordinal>
+              <family>nba_2023_24_regular_season_games.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>22</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>DREB</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[DREB]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>DREB</remote-alias>
+              <ordinal>20</ordinal>
+              <family>nba_2023_24_regular_season_games.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>34</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>REB</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[REB]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>REB</remote-alias>
+              <ordinal>21</ordinal>
+              <family>nba_2023_24_regular_season_games.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>44</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>AST</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[AST]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>AST</remote-alias>
+              <ordinal>22</ordinal>
+              <family>nba_2023_24_regular_season_games.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>34</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>STL</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[STL]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>STL</remote-alias>
+              <ordinal>23</ordinal>
+              <family>nba_2023_24_regular_season_games.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>19</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>BLK</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[BLK]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>BLK</remote-alias>
+              <ordinal>24</ordinal>
+              <family>nba_2023_24_regular_season_games.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>17</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>TOV</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[TOV]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>TOV</remote-alias>
+              <ordinal>25</ordinal>
+              <family>nba_2023_24_regular_season_games.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>27</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>PF</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[PF]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>PF</remote-alias>
+              <ordinal>26</ordinal>
+              <family>nba_2023_24_regular_season_games.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>28</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>PLUS_MINUS</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[PLUS_MINUS]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>PLUS_MINUS</remote-alias>
+              <ordinal>27</ordinal>
+              <family>nba_2023_24_regular_season_games.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>93</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>IS_HOME</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[IS_HOME]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>IS_HOME</remote-alias>
+              <ordinal>28</ordinal>
+              <family>nba_2023_24_regular_season_games.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>OPPONENT</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[OPPONENT]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>OPPONENT</remote-alias>
+              <ordinal>29</ordinal>
+              <family>nba_2023_24_regular_season_games.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>30</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>GAME_NUM</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[GAME_NUM]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>GAME_NUM</remote-alias>
+              <ordinal>30</ordinal>
+              <family>nba_2023_24_regular_season_games.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>82</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>PTS_ROLL5</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[PTS_ROLL5]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>PTS_ROLL5</remote-alias>
+              <ordinal>31</ordinal>
+              <family>nba_2023_24_regular_season_games.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>189</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>AST_ROLL5</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[AST_ROLL5]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>AST_ROLL5</remote-alias>
+              <ordinal>32</ordinal>
+              <family>nba_2023_24_regular_season_games.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>83</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>TOV_ROLL5</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[TOV_ROLL5]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>TOV_ROLL5</remote-alias>
+              <ordinal>33</ordinal>
+              <family>nba_2023_24_regular_season_games.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>54</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>REB_ROLL5</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[REB_ROLL5]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>REB_ROLL5</remote-alias>
+              <ordinal>34</ordinal>
+              <family>nba_2023_24_regular_season_games.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>95</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>FG_PCT_ROLL5</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[FG_PCT_ROLL5]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>FG_PCT_ROLL5</remote-alias>
+              <ordinal>35</ordinal>
+              <family>nba_2023_24_regular_season_games.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>727</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>OPPONENT_TEAM_ID</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[OPPONENT_TEAM_ID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>OPPONENT_TEAM_ID</remote-alias>
+              <ordinal>36</ordinal>
+              <family>nba_2023_24_regular_season_games.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>30</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>home_team_game_id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[home_team_game_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>home_team_game_id</remote-alias>
+              <ordinal>37</ordinal>
+              <family>nba_2023_24_regular_season_games.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2460</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>away_team_game_id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[away_team_game_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>away_team_game_id</remote-alias>
+              <ordinal>38</ordinal>
+              <family>nba_2023_24_regular_season_games.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2460</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>OPP_PTS_ROLL5</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[OPP_PTS_ROLL5]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>OPP_PTS_ROLL5</remote-alias>
+              <ordinal>39</ordinal>
+              <family>nba_2023_24_regular_season_games.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>187</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>OPP_AST_ROLL5</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[OPP_AST_ROLL5]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>OPP_AST_ROLL5</remote-alias>
+              <ordinal>40</ordinal>
+              <family>nba_2023_24_regular_season_games.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>78</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>OPP_TOV_ROLL5</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[OPP_TOV_ROLL5]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>OPP_TOV_ROLL5</remote-alias>
+              <ordinal>41</ordinal>
+              <family>nba_2023_24_regular_season_games.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>59</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>OPP_REB_ROLL5</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[OPP_REB_ROLL5]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>OPP_REB_ROLL5</remote-alias>
+              <ordinal>42</ordinal>
+              <family>nba_2023_24_regular_season_games.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>100</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>OPP_FG_PCT_ROLL5</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[OPP_FG_PCT_ROLL5]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>OPP_FG_PCT_ROLL5</remote-alias>
+              <ordinal>43</ordinal>
+              <family>nba_2023_24_regular_season_games.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>706</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>TARGET_WIN</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[TARGET_WIN]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>TARGET_WIN</remote-alias>
+              <ordinal>44</ordinal>
+              <family>nba_2023_24_regular_season_games.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>WIN_STREAK</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[WIN_STREAK]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>WIN_STREAK</remote-alias>
+              <ordinal>45</ordinal>
+              <family>nba_2023_24_regular_season_games.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>11</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>REST_DAYS</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[REST_DAYS]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>REST_DAYS</remote-alias>
+              <ordinal>46</ordinal>
+              <family>nba_2023_24_regular_season_games.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>DATE_ORDINAL</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[DATE_ORDINAL]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>DATE_ORDINAL</remote-alias>
+              <ordinal>47</ordinal>
+              <family>nba_2023_24_regular_season_games.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>162</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>TEAM_WIN_RATE</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[TEAM_WIN_RATE]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>TEAM_WIN_RATE</remote-alias>
+              <ordinal>48</ordinal>
+              <family>nba_2023_24_regular_season_games.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>688</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Opponent_Win_Rate</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Opponent_Win_Rate]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Opponent_Win_Rate</remote-alias>
+              <ordinal>49</ordinal>
+              <family>nba_2023_24_regular_season_games.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>720</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;[federated.0b0gx511r5gkyg1abfnwo0iug63b].[sum:FGM:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0b0gx511r5gkyg1abfnwo0iug63b].[avg:FG_PCT_ROLL5:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0b0gx511r5gkyg1abfnwo0iug63b].[avg:OPP_REB_ROLL5:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0b0gx511r5gkyg1abfnwo0iug63b].[cum:sum:Calculation_0987102718844929:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.0b0gx511r5gkyg1abfnwo0iug63b].[sum:BLK:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.0b0gx511r5gkyg1abfnwo0iug63b].[win:avg:OREB:qk:2]&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;[federated.0b0gx511r5gkyg1abfnwo0iug63b].[sum:FG_PCT_ROLL5:qk]&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;[federated.0b0gx511r5gkyg1abfnwo0iug63b].[sum:FTA:qk]&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;[federated.0b0gx511r5gkyg1abfnwo0iug63b].[sum:DATE_ORDINAL:qk]&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;[federated.0b0gx511r5gkyg1abfnwo0iug63b].[sum:Calculation_0987102718844929:qk]&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;[federated.0b0gx511r5gkyg1abfnwo0iug63b].[sum:OPP_AST_ROLL5:qk]&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;[federated.0b0gx511r5gkyg1abfnwo0iug63b].[avg:AST:qk]&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;[federated.0b0gx511r5gkyg1abfnwo0iug63b].[sum:AST:qk]&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;[federated.0b0gx511r5gkyg1abfnwo0iug63b].[win:avg:AST:qk:2]&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;[federated.0b0gx511r5gkyg1abfnwo0iug63b].[win:avg:AST:qk]&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;[federated.0b0gx511r5gkyg1abfnwo0iug63b].[avg:FT_PCT:qk]&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;[federated.0b0gx511r5gkyg1abfnwo0iug63b].[sum:FT_PCT:qk]&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;[federated.0b0gx511r5gkyg1abfnwo0iug63b].[win:avg:FT_PCT:qk:2]&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;[federated.0b0gx511r5gkyg1abfnwo0iug63b].[win:avg:FT_PCT:qk]&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;[federated.0b0gx511r5gkyg1abfnwo0iug63b].[avg:DREB:qk]&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;[federated.0b0gx511r5gkyg1abfnwo0iug63b].[sum:DREB:qk]&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;[federated.0b0gx511r5gkyg1abfnwo0iug63b].[win:avg:DREB:qk:2]&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;[federated.0b0gx511r5gkyg1abfnwo0iug63b].[win:avg:DREB:qk]&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;[federated.0b0gx511r5gkyg1abfnwo0iug63b].[avg:FG3_PCT:qk]&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;[federated.0b0gx511r5gkyg1abfnwo0iug63b].[sum:FG3_PCT:qk]&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;[federated.0b0gx511r5gkyg1abfnwo0iug63b].[win:avg:FG3_PCT:qk:2]&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;[federated.0b0gx511r5gkyg1abfnwo0iug63b].[win:avg:FG3_PCT:qk:4]&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;[federated.0b0gx511r5gkyg1abfnwo0iug63b].[win:avg:FG3_PCT:qk]&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;[federated.0b0gx511r5gkyg1abfnwo0iug63b].[sum:FG3A:qk]&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;[federated.0b0gx511r5gkyg1abfnwo0iug63b].[sum:IS_HOME:qk]&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;[federated.0b0gx511r5gkyg1abfnwo0iug63b].[sum:MIN:qk]&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;[federated.0b0gx511r5gkyg1abfnwo0iug63b].[sum:OPP_FG_PCT_ROLL5:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.0b0gx511r5gkyg1abfnwo0iug63b].[sum:FTM:qk]&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;[federated.0b0gx511r5gkyg1abfnwo0iug63b].[win:avg:TOV:qk:2]&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;[federated.0b0gx511r5gkyg1abfnwo0iug63b].[sum:FGA:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0b0gx511r5gkyg1abfnwo0iug63b].[avg:OPP_FG_PCT_ROLL5:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0b0gx511r5gkyg1abfnwo0iug63b].[avg:REB_ROLL5:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0b0gx511r5gkyg1abfnwo0iug63b].[avg:TOV_ROLL5:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0b0gx511r5gkyg1abfnwo0iug63b].[cum:sum:Calculation_0987102718590976:qk]&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;[federated.0b0gx511r5gkyg1abfnwo0iug63b].[sum:FG3M:qk]&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;[federated.0b0gx511r5gkyg1abfnwo0iug63b].[avg:FG_PCT:qk]&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;[federated.0b0gx511r5gkyg1abfnwo0iug63b].[sum:FG_PCT:qk]&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;[federated.0b0gx511r5gkyg1abfnwo0iug63b].[win:avg:FG_PCT:qk:2]&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;[federated.0b0gx511r5gkyg1abfnwo0iug63b].[win:avg:FG_PCT:qk]&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;[federated.0b0gx511r5gkyg1abfnwo0iug63b].[avg:AST_ROLL5:qk]&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;[federated.0b0gx511r5gkyg1abfnwo0iug63b].[sum:AST_ROLL5:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='nba_2023_24_regular_season_games.csv' id='nba_2023_24_regular_season_games.csv_2B137A8E6A954CCD8C8022616E04D0EE'>
+            <properties context=''>
+              <relation connection='textscan.1ll0dr51qbezub118f7be198zh1w' name='nba_2023_24_regular_season_games.csv' table='[nba_2023_24_regular_season_games#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='integer' name='SEASON_ID' ordinal='0' />
+                  <column datatype='integer' name='TEAM_ID' ordinal='1' />
+                  <column datatype='string' name='TEAM_ABBREVIATION' ordinal='2' />
+                  <column datatype='string' name='TEAM_NAME' ordinal='3' />
+                  <column datatype='integer' name='GAME_ID' ordinal='4' />
+                  <column datatype='date' name='GAME_DATE' ordinal='5' />
+                  <column datatype='string' name='MATCHUP' ordinal='6' />
+                  <column datatype='string' name='WL' ordinal='7' />
+                  <column datatype='integer' name='MIN' ordinal='8' />
+                  <column datatype='integer' name='PTS' ordinal='9' />
+                  <column datatype='integer' name='FGM' ordinal='10' />
+                  <column datatype='integer' name='FGA' ordinal='11' />
+                  <column datatype='real' name='FG_PCT' ordinal='12' />
+                  <column datatype='integer' name='FG3M' ordinal='13' />
+                  <column datatype='integer' name='FG3A' ordinal='14' />
+                  <column datatype='real' name='FG3_PCT' ordinal='15' />
+                  <column datatype='integer' name='FTM' ordinal='16' />
+                  <column datatype='integer' name='FTA' ordinal='17' />
+                  <column datatype='real' name='FT_PCT' ordinal='18' />
+                  <column datatype='integer' name='OREB' ordinal='19' />
+                  <column datatype='integer' name='DREB' ordinal='20' />
+                  <column datatype='integer' name='REB' ordinal='21' />
+                  <column datatype='integer' name='AST' ordinal='22' />
+                  <column datatype='integer' name='STL' ordinal='23' />
+                  <column datatype='integer' name='BLK' ordinal='24' />
+                  <column datatype='integer' name='TOV' ordinal='25' />
+                  <column datatype='integer' name='PF' ordinal='26' />
+                  <column datatype='real' name='PLUS_MINUS' ordinal='27' />
+                  <column datatype='integer' name='IS_HOME' ordinal='28' />
+                  <column datatype='string' name='OPPONENT' ordinal='29' />
+                  <column datatype='integer' name='GAME_NUM' ordinal='30' />
+                  <column datatype='real' name='PTS_ROLL5' ordinal='31' />
+                  <column datatype='real' name='AST_ROLL5' ordinal='32' />
+                  <column datatype='real' name='TOV_ROLL5' ordinal='33' />
+                  <column datatype='real' name='REB_ROLL5' ordinal='34' />
+                  <column datatype='real' name='FG_PCT_ROLL5' ordinal='35' />
+                  <column datatype='integer' name='OPPONENT_TEAM_ID' ordinal='36' />
+                  <column datatype='string' name='home_team_game_id' ordinal='37' />
+                  <column datatype='string' name='away_team_game_id' ordinal='38' />
+                  <column datatype='real' name='OPP_PTS_ROLL5' ordinal='39' />
+                  <column datatype='real' name='OPP_AST_ROLL5' ordinal='40' />
+                  <column datatype='real' name='OPP_TOV_ROLL5' ordinal='41' />
+                  <column datatype='real' name='OPP_REB_ROLL5' ordinal='42' />
+                  <column datatype='real' name='OPP_FG_PCT_ROLL5' ordinal='43' />
+                  <column datatype='integer' name='TARGET_WIN' ordinal='44' />
+                  <column datatype='integer' name='WIN_STREAK' ordinal='45' />
+                  <column datatype='integer' name='REST_DAYS' ordinal='46' />
+                  <column datatype='integer' name='DATE_ORDINAL' ordinal='47' />
+                  <column datatype='real' name='TEAM_WIN_RATE' ordinal='48' />
+                  <column datatype='real' name='Opponent_Win_Rate' ordinal='49' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <shared-views>
+    <shared-view name='federated.0b0gx511r5gkyg1abfnwo0iug63b'>
+      <datasources>
+        <datasource caption='nba_2023_24_regular_season_games' name='federated.0b0gx511r5gkyg1abfnwo0iug63b' />
+      </datasources>
+      <datasource-dependencies datasource='federated.0b0gx511r5gkyg1abfnwo0iug63b'>
+        <column caption='Team Name' datatype='string' name='[TEAM_NAME]' role='dimension' type='nominal' />
+        <column-instance column='[TEAM_NAME]' derivation='None' name='[none:TEAM_NAME:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <filter class='categorical' column='[federated.0b0gx511r5gkyg1abfnwo0iug63b].[none:TEAM_NAME:nk]'>
+        <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+          <groupfilter function='member' level='[none:TEAM_NAME:nk]' member='&quot;LA Clippers&quot;' />
+          <groupfilter function='member' level='[none:TEAM_NAME:nk]' member='&quot;Oklahoma City Thunder&quot;' />
+        </groupfilter>
+      </filter>
+    </shared-view>
+  </shared-views>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000000' fontname='Menlo'>Team_Performance</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='nba_2023_24_regular_season_games' name='federated.0b0gx511r5gkyg1abfnwo0iug63b' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0b0gx511r5gkyg1abfnwo0iug63b'>
+            <column datatype='integer' name='[AST]' role='measure' type='quantitative' />
+            <column caption='W Marker' datatype='integer' name='[Calculation_0987102718590976]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [WL] = &apos;W&apos; OR [TARGET_WIN] = 1 THEN 1 ELSE 0 END' />
+            </column>
+            <column caption='L Marker' datatype='integer' name='[Calculation_0987102718844929]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [WL] = &apos;L&apos; OR [TARGET_WIN] = 0 THEN 1 ELSE 0 END' />
+            </column>
+            <column caption='Dreb' datatype='integer' name='[DREB]' role='measure' type='quantitative' />
+            <column caption='Fg3 Pct' datatype='real' name='[FG3_PCT]' role='measure' type='quantitative' />
+            <column caption='Fg Pct' datatype='real' name='[FG_PCT]' role='measure' type='quantitative' />
+            <column caption='Game Date' datatype='date' name='[GAME_DATE]' role='dimension' type='ordinal' />
+            <column caption='Oreb' datatype='integer' name='[OREB]' role='measure' type='quantitative' />
+            <column caption='Target Win' datatype='integer' name='[TARGET_WIN]' role='measure' type='quantitative' />
+            <column caption='Team Name' datatype='string' name='[TEAM_NAME]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[TOV]' role='measure' type='quantitative' />
+            <column datatype='string' name='[WL]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_0987102718590976]' derivation='Sum' name='[cum:sum:Calculation_0987102718590976:qk]' pivot='key' type='quantitative'>
+              <table-calc aggregation='Sum' ordering-type='Rows' type='CumTotal' />
+            </column-instance>
+            <column-instance column='[Calculation_0987102718844929]' derivation='Sum' name='[cum:sum:Calculation_0987102718844929:qk]' pivot='key' type='quantitative'>
+              <table-calc aggregation='Sum' ordering-type='Rows' type='CumTotal' />
+            </column-instance>
+            <column-instance column='[GAME_DATE]' derivation='None' name='[none:GAME_DATE:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[TEAM_NAME]' derivation='None' name='[none:TEAM_NAME:nk]' pivot='key' type='nominal' />
+            <column-instance column='[AST]' derivation='Avg' name='[win:avg:AST:qk:2]' pivot='key' type='quantitative'>
+              <table-calc aggregation='Avg' from='-4' ordering-type='Rows' to='0' type='WindowTotal' window-options='IncludeCurrent' />
+            </column-instance>
+            <column-instance column='[DREB]' derivation='Avg' name='[win:avg:DREB:qk:2]' pivot='key' type='quantitative'>
+              <table-calc aggregation='Avg' from='-4' ordering-type='Rows' to='0' type='WindowTotal' window-options='IncludeCurrent' />
+            </column-instance>
+            <column-instance column='[FG3_PCT]' derivation='Avg' name='[win:avg:FG3_PCT:qk:2]' pivot='key' type='quantitative'>
+              <table-calc aggregation='Avg' from='-4' ordering-type='Rows' to='0' type='WindowTotal' window-options='IncludeCurrent' />
+            </column-instance>
+            <column-instance column='[FG_PCT]' derivation='Avg' name='[win:avg:FG_PCT:qk:2]' pivot='key' type='quantitative'>
+              <table-calc aggregation='Avg' from='-4' ordering-type='Rows' to='0' type='WindowTotal' window-options='IncludeCurrent' />
+            </column-instance>
+            <column-instance column='[OREB]' derivation='Avg' name='[win:avg:OREB:qk:2]' pivot='key' type='quantitative'>
+              <table-calc aggregation='Avg' from='-4' ordering-type='Rows' to='0' type='WindowTotal' window-options='IncludeCurrent' />
+            </column-instance>
+            <column-instance column='[TOV]' derivation='Avg' name='[win:avg:TOV:qk:2]' pivot='key' type='quantitative'>
+              <table-calc aggregation='Avg' from='-4' ordering-type='Rows' to='0' type='WindowTotal' window-options='IncludeCurrent' />
+            </column-instance>
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.0b0gx511r5gkyg1abfnwo0iug63b].[none:TEAM_NAME:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0b0gx511r5gkyg1abfnwo0iug63b].[cum:sum:Calculation_0987102718844929:qk]' field-type='quantitative' fold='true' scope='rows' synchronized='true' type='space' />
+            <encoding attr='space' class='0' field='[federated.0b0gx511r5gkyg1abfnwo0iug63b].[win:avg:FG3_PCT:qk:2]' field-type='quantitative' fold='true' scope='rows' type='space' />
+            <encoding attr='space' class='0' field='[federated.0b0gx511r5gkyg1abfnwo0iug63b].[win:avg:OREB:qk:2]' field-type='quantitative' fold='true' scope='rows' type='space' />
+            <encoding attr='space' class='0' field='[federated.0b0gx511r5gkyg1abfnwo0iug63b].[win:avg:TOV:qk:2]' field-type='quantitative' fold='true' scope='rows' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0b0gx511r5gkyg1abfnwo0iug63b].[cum:sum:Calculation_0987102718590976:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#59a14f' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0b0gx511r5gkyg1abfnwo0iug63b].[cum:sum:Calculation_0987102718844929:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#f28e2b' />
+                <format attr='mark-line-pattern' value='dotted' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0b0gx511r5gkyg1abfnwo0iug63b].[win:avg:FG_PCT:qk:2]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0b0gx511r5gkyg1abfnwo0iug63b].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0b0gx511r5gkyg1abfnwo0iug63b].[win:avg:FG3_PCT:qk:2]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0b0gx511r5gkyg1abfnwo0iug63b].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='5' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0b0gx511r5gkyg1abfnwo0iug63b].[win:avg:DREB:qk:2]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0b0gx511r5gkyg1abfnwo0iug63b].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='6' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0b0gx511r5gkyg1abfnwo0iug63b].[win:avg:OREB:qk:2]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0b0gx511r5gkyg1abfnwo0iug63b].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='7' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0b0gx511r5gkyg1abfnwo0iug63b].[win:avg:AST:qk:2]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0b0gx511r5gkyg1abfnwo0iug63b].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='8' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0b0gx511r5gkyg1abfnwo0iug63b].[win:avg:TOV:qk:2]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0b0gx511r5gkyg1abfnwo0iug63b].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.0b0gx511r5gkyg1abfnwo0iug63b].[cum:sum:Calculation_0987102718590976:qk] + ([federated.0b0gx511r5gkyg1abfnwo0iug63b].[cum:sum:Calculation_0987102718844929:qk] + ([federated.0b0gx511r5gkyg1abfnwo0iug63b].[win:avg:FG_PCT:qk:2] + ([federated.0b0gx511r5gkyg1abfnwo0iug63b].[win:avg:FG3_PCT:qk:2] + ([federated.0b0gx511r5gkyg1abfnwo0iug63b].[win:avg:DREB:qk:2] + ([federated.0b0gx511r5gkyg1abfnwo0iug63b].[win:avg:OREB:qk:2] + ([federated.0b0gx511r5gkyg1abfnwo0iug63b].[win:avg:AST:qk:2] + [federated.0b0gx511r5gkyg1abfnwo0iug63b].[win:avg:TOV:qk:2])))))))</rows>
+        <cols>[federated.0b0gx511r5gkyg1abfnwo0iug63b].[none:GAME_DATE:qk]</cols>
+      </table>
+      <simple-id uuid='{24173606-E05D-4060-84C9-030891BA4CAB}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000000' fontname='Menlo'>Shooting_Momentum</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='nba_2023_24_regular_season_games' name='federated.0b0gx511r5gkyg1abfnwo0iug63b' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0b0gx511r5gkyg1abfnwo0iug63b'>
+            <column caption='Fg3 Pct' datatype='real' name='[FG3_PCT]' role='measure' type='quantitative' />
+            <column caption='Fg Pct' datatype='real' name='[FG_PCT]' role='measure' type='quantitative' />
+            <column caption='Ft Pct' datatype='real' name='[FT_PCT]' role='measure' type='quantitative' />
+            <column caption='Game Date' datatype='date' name='[GAME_DATE]' role='dimension' type='ordinal' />
+            <column caption='Team Name' datatype='string' name='[TEAM_NAME]' role='dimension' type='nominal' />
+            <column-instance column='[GAME_DATE]' derivation='None' name='[none:GAME_DATE:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[TEAM_NAME]' derivation='None' name='[none:TEAM_NAME:nk]' pivot='key' type='nominal' />
+            <column-instance column='[FG3_PCT]' derivation='Avg' name='[win:avg:FG3_PCT:qk:2]' pivot='key' type='quantitative'>
+              <table-calc aggregation='Avg' from='-4' ordering-type='Rows' to='0' type='WindowTotal' window-options='IncludeCurrent' />
+            </column-instance>
+            <column-instance column='[FG_PCT]' derivation='Avg' name='[win:avg:FG_PCT:qk:2]' pivot='key' type='quantitative'>
+              <table-calc aggregation='Avg' from='-4' ordering-type='Rows' to='0' type='WindowTotal' window-options='IncludeCurrent' />
+            </column-instance>
+            <column-instance column='[FT_PCT]' derivation='Avg' name='[win:avg:FT_PCT:qk:2]' pivot='key' type='quantitative'>
+              <table-calc aggregation='Avg' from='-4' ordering-type='Rows' to='0' type='WindowTotal' window-options='IncludeCurrent' />
+            </column-instance>
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.0b0gx511r5gkyg1abfnwo0iug63b].[none:TEAM_NAME:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' domain-expand='false' field='[federated.0b0gx511r5gkyg1abfnwo0iug63b].[win:avg:FT_PCT:qk:2]' field-type='quantitative' scope='rows' type='space' />
+            <encoding attr='space' class='0' domain-expand='false' field='[federated.0b0gx511r5gkyg1abfnwo0iug63b].[win:avg:FG_PCT:qk:2]' field-type='quantitative' scope='rows' type='space' />
+            <encoding attr='space' class='0' domain-expand='false' field='[federated.0b0gx511r5gkyg1abfnwo0iug63b].[win:avg:FG3_PCT:qk:2]' field-type='quantitative' scope='rows' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-line-pattern' value='dotted' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0b0gx511r5gkyg1abfnwo0iug63b].[win:avg:FT_PCT:qk:2]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-line-pattern' value='dotted' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0b0gx511r5gkyg1abfnwo0iug63b].[win:avg:FG_PCT:qk:2]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-line-pattern' value='dotted' />
+                <format attr='mark-color' value='#f9a655' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='5' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0b0gx511r5gkyg1abfnwo0iug63b].[win:avg:FG3_PCT:qk:2]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-line-pattern' value='dotted' />
+                <format attr='mark-color' value='#f17b79' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0b0gx511r5gkyg1abfnwo0iug63b].[win:avg:FT_PCT:qk:2] + ([federated.0b0gx511r5gkyg1abfnwo0iug63b].[win:avg:FG_PCT:qk:2] + [federated.0b0gx511r5gkyg1abfnwo0iug63b].[win:avg:FG3_PCT:qk:2]))</rows>
+        <cols>[federated.0b0gx511r5gkyg1abfnwo0iug63b].[none:GAME_DATE:qk]</cols>
+      </table>
+      <simple-id uuid='{6D252B12-4164-490A-9FA6-FD06C0F5370F}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size sizing-mode='automatic' />
+      <datasources>
+        <datasource caption='nba_2023_24_regular_season_games' name='federated.0b0gx511r5gkyg1abfnwo0iug63b' />
+      </datasources>
+      <datasource-dependencies datasource='federated.0b0gx511r5gkyg1abfnwo0iug63b'>
+        <column caption='Team Name' datatype='string' name='[TEAM_NAME]' role='dimension' type='nominal' />
+        <column-instance column='[TEAM_NAME]' derivation='None' name='[none:TEAM_NAME:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98074' id='7' param='horz' type-v2='layout-flow' w='98730' x='635' y='963'>
+            <zone h='98074' id='5' type-v2='layout-basic' w='86022' x='635' y='963'>
+              <zone h='49037' id='3' name='Sheet 1' w='86022' x='635' y='963'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49037' id='10' name='Sheet 2' w='86022' x='635' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='98074' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='12708' x='86657' y='963'>
+              <zone h='74730' id='8' name='Sheet 1' param='[federated.0b0gx511r5gkyg1abfnwo0iug63b].[none:TEAM_NAME:nk]' type-v2='filter' w='12708' x='86657' y='963'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='17569' id='9' name='Sheet 1' pane-specification-id='3' param='[federated.0b0gx511r5gkyg1abfnwo0iug63b].[:Measure Names]' type-v2='color' w='12708' x='86657' y='75693'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='1' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{FEAD6183-24EF-44FE-B291-102DBA19C99B}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0b0gx511r5gkyg1abfnwo0iug63b].[none:TEAM_NAME:nk]' type='filter' />
+            <card pane-specification-id='3' param='[federated.0b0gx511r5gkyg1abfnwo0iug63b].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{301F8172-B690-4BDB-BCF6-8128BF0E3955}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0b0gx511r5gkyg1abfnwo0iug63b].[none:TEAM_NAME:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{4B1B2F61-E0C8-46EC-A819-47FF2D16E01F}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Sheet 1'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 2'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='8' />
+      <simple-id uuid='{E0A5DB01-2072-4B1F-87E6-34F332B78267}' />
+    </window>
+  </windows>
+</workbook>

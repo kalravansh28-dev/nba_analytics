@@ -1,0 +1,12 @@
+.venv/
+venv/
+__pycache__/
+*.pyc
+.DS_Storenba_sheets.twbx
+xgb_nba_model.pkl
+nba_sheets.twbx
+xgb_nba_model.pkl
+.venv/
+venv/
+__pycache__/
+*.pyc
