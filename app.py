@@ -25,7 +25,7 @@ feature_limits = {
     'OPP_TOV_ROLL5': (0, 30),
     'OPP_REB_ROLL5': (0, 60),
     'OPP_FG_PCT_ROLL5': (0.0, 1.0),
-    'WIN_STREAK': (-20, 20),
+    'WIN_STREAK': (0, 20),
     'REST_DAYS': (0, 10),
     'Opponent_Win_Rate': (0.0, 1.0),
     'DATE_ORDINAL': (0, 1000000)
